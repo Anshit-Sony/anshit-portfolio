@@ -206,6 +206,7 @@ nav .logo {
 
 /* skills */
 #skills {
+    max-width: 100vw;
     min-height: 100vh;
     padding-top: 100px;
 }
@@ -335,11 +336,11 @@ nav .logo {
     transform: scale(1.1);
 }
 
-.project-detail .project-buttons button:first-child {
+.project-detail .project-buttons .greenbtn {
     background-color: #50b048;
 }
 
-.project-detail .project-buttons button:last-child {
+.project-detail .project-buttons .redbtn {
     background-color: #e05656;
 }
 
