@@ -22,3 +22,21 @@ slider.addEventListener("click",()=>{
         currmode="dark"
     }
 })
+
+document.getElementById('bar').addEventListener('click', function() {
+    var menu = document.getElementById('navMenu');
+    menu.classList.toggle('active');
+});
+
+document.getElementById('cv').addEventListener('click', function() {
+
+    var downloadLink = document.createElement('a');
+    downloadLink.href = 'assets/anshit_sony_resume.pdf'; 
+    downloadLink.download = 'Anshit_Sony_CV.pdf'; 
+
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
+
+    document.body.removeChild(downloadLink);
+});
