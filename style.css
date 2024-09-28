@@ -72,6 +72,10 @@ nav .logo {
     display: none;
     align-items: center;
 }
+#mobile i{
+    color: var(--txt-col);
+}
+
 .sliderBox{
     border: 3px solid white;
     width: 85px;
@@ -157,30 +161,17 @@ nav .logo {
 }
 
 #cv{
-    height: 100px; 
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--txt-col);
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--text-col);
     background-color: #00bcd4;
-    border: 1px solid transparent;
-    box-shadow: 2px 2px 2px lightblue inset;
-    margin-top: 5px;
-    padding: 20px;
     cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-#cv:hover span{
-    display: none;
 }
 
 #cv:hover{
-    background-color: #11a372;
-    height: 80px;
-    transform: scale(0.8);
-    transition: all 0.5s ease;
+    transform: scale(1.02);
 }
+
 
 /* education */
 #education {
@@ -558,7 +549,6 @@ nav .logo {
     }
 
     #mobile i{
-        color: #1a1a1a;
         font-size: 24px;
         padding-left: 20px;
     }
