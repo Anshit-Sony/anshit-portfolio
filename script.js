@@ -31,7 +31,7 @@ document.getElementById('bar').addEventListener('click', function() {
 document.getElementById('cv').addEventListener('click', function() {
 
     var downloadLink = document.createElement('a');
-    downloadLink.href = 'assets/anshit_sony_resume.pdf'; 
+    downloadLink.href = 'assets/anshit_resume_latest.pdf'; 
     downloadLink.download = 'Anshit_Sony_CV.pdf'; 
 
     document.body.appendChild(downloadLink);
@@ -40,3 +40,18 @@ document.getElementById('cv').addEventListener('click', function() {
 
     document.body.removeChild(downloadLink);
 });
+
+const contactForm=document.querySelector('form');
+contactForm.addEventListener("submit",()=>{
+    let name=document.getElementById('name').value;
+    let email=document.getElementById('email').value;
+    let message=document.getElementById('message').value;
+    if(name===""||email===""||message===""){
+        alert("All fields are required");
+        return false;
+    }
+    else{
+        alert(`Thank you for your message, ${name}. I will get back to you shortly.`);
+        return true;
+    }
+})
