@@ -13,6 +13,10 @@
     --txt-col:rgb(21, 20, 20);
 } */
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
